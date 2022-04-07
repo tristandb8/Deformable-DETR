@@ -12,6 +12,7 @@ echo "Slurm nodes assigned :$SLURM_JOB_NODELIST"
 module load anaconda/anaconda3
 module load gcc/gcc-7.1.0
 module load cuda/cuda-10.2
+cd Deformable-DETR
 source activate pytorch-1.6.0+py37+cuda10_2
 export OMP_NUM_THREADS=1
 pip install -r requirements.txt
